@@ -47,16 +47,18 @@ The program can be configured via the generated `config.ini` file.
 The `config.ini` file should be located in the same directory as `ReleaseRadar.py` and should have the following format:
 
 ```ini
+[Spotify]
 client_id = your_spotify_client_id
 client_secret = your_spotify_client_secret
-playlist = your_spotify_playlist_id
+release_radar_url = your_spotify_playlist_url
+redirect_uri = http://localhost:8080
 ```
 
 Where:
 
 - `client_id` is your Spotify application's client ID. (example: `client_id = 1234567890abcdef1234567890abcdef`)
 - `client_secret` is your Spotify application's client secret. (example: `client_secret = 987654321`)
-- `release_radar_id` (Optional) The Spotify playlist ID of your ReleaseRadar playlist. (example: `release_radar_id = https://open.spotify.com/playlist/37i9dQZEVXbcVlACDEuMlx?si=6ba5e8dfbd4442da`)
+- `release_radar_id` (Optional) The Spotify playlist URL of your ReleaseRadar playlist. (example: `release_radar_url = https://open.spotify.com/playlist/37i9dQZEVXbcVlACDEuMlx?si=6ba5e8dfbd4442da`)
 
 ## Usage
 
